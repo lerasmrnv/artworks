@@ -1,0 +1,88 @@
+const dataArts = [
+    {
+        id: 1,
+        name: 'George Dillan',
+        category: 'Forest silence',
+        imageArtwork: 'https://aboutpaintingblog.files.wordpress.com/2021/04/001-1.jpg?w=737',
+        userImage: 'https://1.downloader.disk.yandex.by/preview/0dc1134756206d68dff41e9337dec8e69cfcbe78bede72075dbf405737e01035/inf/lo0sYY2q2qw-WIZ5TrP3zxBFxgL5wTNQl6Zrb8ULpqQ-UJx-nb-ItFehK60Aa9HOm5Vkldir07BQi3J3Sx15cQ%3D%3D?uid=418637868&filename=Artist1.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=418637868&tknv=v2&size=1898x932',
+    },
+    {
+        id: 2,
+        name: 'Peggy Wood',
+        category: 'Still life V',
+        imageArtwork: 'https://art-dot.ru/wp-content/uploads/2020/02/30876222624_ba644a12df_b.jpg',
+        userImage: 'https://2.downloader.disk.yandex.by/preview/2f8b5fd13a856e1cccfbf292b7fa1952d5b6363b573495accfee31ac4eb96dd1/inf/1yWraZBc418yM8GbZbsjLSTqdCC9_4UV9cAFz2JqU1TwFMWiO0QAmzfxoApaG0_wEsqgu8_VjKDwyUNyyIxVZw%3D%3D?uid=418637868&filename=Artis2t.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=418637868&tknv=v2&size=1898x932',
+    },
+    {
+        id: 3,
+        name: 'Alice Gordan',
+        category: 'Surrounded',
+        imageArtwork: 'https://images.unsplash.com/photo-1579762715459-5a068c289fda?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80',
+        userImage: 'https://3.downloader.disk.yandex.by/preview/ff4b7112aa1b2dc5a5d7d05f88e4213be28237b5d98c59725e0e1029b945be52/inf/EBrYjk-u0WMiyd4RDoATeFuR1zcqHgTJhnmwwsZwm8-7zYguTf8EGEBKhsiP089ISLr0brKakuyyGYczCohrWA%3D%3D?uid=418637868&filename=Artis3.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=418637868&tknv=v2&size=1898x932',
+    },
+    {
+        id: 4,
+        name: 'Timothy Taylor',
+        category: 'Mountain landscape',
+        imageArtwork: 'https://www.adelinefusillier.fr/wp-content/uploads/2020/06/Adeline-fusillier-art-the%CC%81rapie-tours.jpeg',
+        userImage: 'https://3.downloader.disk.yandex.by/preview/a54a21153df4ff35bd8eb48e0864836d5f6a70737b1d3bf1af80c515f6e000bc/inf/Iw1dyEq8w_MK9lfz8afCDVuR1zcqHgTJhnmwwsZwm8-MMDv_z4dYZ6Plz_80CwebZ4ckRsXrutHosGlLYCvRPA%3D%3D?uid=418637868&filename=Artis%D0%B54.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=418637868&tknv=v2&size=1898x932',
+    }, 
+    {
+        id: 5,
+        name: 'Alice Gordan',
+        category: 'Surrounded',
+        imageArtwork: 'https://images.unsplash.com/photo-1579762715459-5a068c289fda?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80',
+        userImage: 'https://3.downloader.disk.yandex.by/preview/ff4b7112aa1b2dc5a5d7d05f88e4213be28237b5d98c59725e0e1029b945be52/inf/EBrYjk-u0WMiyd4RDoATeFuR1zcqHgTJhnmwwsZwm8-7zYguTf8EGEBKhsiP089ISLr0brKakuyyGYczCohrWA%3D%3D?uid=418637868&filename=Artis3.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=418637868&tknv=v2&size=1898x932',
+    },
+    {
+        id: 6,
+        name: 'Timothy Taylor',
+        category: 'Mountain landscape',
+        imageArtwork: 'https://www.adelinefusillier.fr/wp-content/uploads/2020/06/Adeline-fusillier-art-the%CC%81rapie-tours.jpeg',
+        userImage: 'https://3.downloader.disk.yandex.by/preview/a54a21153df4ff35bd8eb48e0864836d5f6a70737b1d3bf1af80c515f6e000bc/inf/Iw1dyEq8w_MK9lfz8afCDVuR1zcqHgTJhnmwwsZwm8-MMDv_z4dYZ6Plz_80CwebZ4ckRsXrutHosGlLYCvRPA%3D%3D?uid=418637868&filename=Artis%D0%B54.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=418637868&tknv=v2&size=1898x932',
+    },
+    {
+        id: 7,
+        name: 'Alice Gordan',
+        category: 'Surrounded',
+        imageArtwork: 'https://images.unsplash.com/photo-1579762715459-5a068c289fda?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80',
+        userImage: 'https://3.downloader.disk.yandex.by/preview/ff4b7112aa1b2dc5a5d7d05f88e4213be28237b5d98c59725e0e1029b945be52/inf/EBrYjk-u0WMiyd4RDoATeFuR1zcqHgTJhnmwwsZwm8-7zYguTf8EGEBKhsiP089ISLr0brKakuyyGYczCohrWA%3D%3D?uid=418637868&filename=Artis3.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=418637868&tknv=v2&size=1898x932',
+    },
+    {
+        id: 8,
+        name: 'Timothy Taylor',
+        category: 'Mountain landscape',
+        imageArtwork: 'https://www.adelinefusillier.fr/wp-content/uploads/2020/06/Adeline-fusillier-art-the%CC%81rapie-tours.jpeg',
+        userImage: 'https://3.downloader.disk.yandex.by/preview/a54a21153df4ff35bd8eb48e0864836d5f6a70737b1d3bf1af80c515f6e000bc/inf/Iw1dyEq8w_MK9lfz8afCDVuR1zcqHgTJhnmwwsZwm8-MMDv_z4dYZ6Plz_80CwebZ4ckRsXrutHosGlLYCvRPA%3D%3D?uid=418637868&filename=Artis%D0%B54.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=418637868&tknv=v2&size=1898x932',
+    },   
+    {
+        id: 9,
+        name: 'George Dillan',
+        category: 'Forest silence',
+        imageArtwork: 'https://aboutpaintingblog.files.wordpress.com/2021/04/001-1.jpg?w=737',
+        userImage: 'https://1.downloader.disk.yandex.by/preview/0dc1134756206d68dff41e9337dec8e69cfcbe78bede72075dbf405737e01035/inf/lo0sYY2q2qw-WIZ5TrP3zxBFxgL5wTNQl6Zrb8ULpqQ-UJx-nb-ItFehK60Aa9HOm5Vkldir07BQi3J3Sx15cQ%3D%3D?uid=418637868&filename=Artist1.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=418637868&tknv=v2&size=1898x932',
+    },
+    {
+        id: 10,
+        name: 'Peggy Wood',
+        category: 'Still life V',
+        imageArtwork: 'https://art-dot.ru/wp-content/uploads/2020/02/30876222624_ba644a12df_b.jpg',
+        userImage: 'https://2.downloader.disk.yandex.by/preview/2f8b5fd13a856e1cccfbf292b7fa1952d5b6363b573495accfee31ac4eb96dd1/inf/1yWraZBc418yM8GbZbsjLSTqdCC9_4UV9cAFz2JqU1TwFMWiO0QAmzfxoApaG0_wEsqgu8_VjKDwyUNyyIxVZw%3D%3D?uid=418637868&filename=Artis2t.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=418637868&tknv=v2&size=1898x932',
+    },
+    {
+        id: 11,
+        name: 'Alice Gordan',
+        category: 'Surrounded',
+        imageArtwork: 'https://images.unsplash.com/photo-1579762715459-5a068c289fda?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80',
+        userImage: 'https://3.downloader.disk.yandex.by/preview/ff4b7112aa1b2dc5a5d7d05f88e4213be28237b5d98c59725e0e1029b945be52/inf/EBrYjk-u0WMiyd4RDoATeFuR1zcqHgTJhnmwwsZwm8-7zYguTf8EGEBKhsiP089ISLr0brKakuyyGYczCohrWA%3D%3D?uid=418637868&filename=Artis3.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=418637868&tknv=v2&size=1898x932',
+    },
+    {
+        id: 12,
+        name: 'Timothy Taylor',
+        category: 'Mountain landscape',
+        imageArtwork: 'https://www.adelinefusillier.fr/wp-content/uploads/2020/06/Adeline-fusillier-art-the%CC%81rapie-tours.jpeg',
+        userImage: 'https://3.downloader.disk.yandex.by/preview/a54a21153df4ff35bd8eb48e0864836d5f6a70737b1d3bf1af80c515f6e000bc/inf/Iw1dyEq8w_MK9lfz8afCDVuR1zcqHgTJhnmwwsZwm8-MMDv_z4dYZ6Plz_80CwebZ4ckRsXrutHosGlLYCvRPA%3D%3D?uid=418637868&filename=Artis%D0%B54.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=418637868&tknv=v2&size=1898x932',
+    },
+]
+
+export default dataArts;

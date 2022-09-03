@@ -1,0 +1,27 @@
+@import './variables.scss';
+
+@import '../../components/Header/header.scss';
+@import '../../components/Main/main.scss';
+@import '../../components/FilterCategory/filterCategory.scss';
+@import '../../components/ListArt/listArt.scss';
+@import '../../components/ItemArt/itemArt.scss';
+@import '../../components/Pagination/pagination.scss';
+@import '../../components/SearchName/searchName.scss';
+
+@import '../../components/Footer/footer.scss';
+
+@media #{$width-desktop} {
+    .marginPage {
+        max-width: $widthPage;
+        margin: 0 auto;
+    }
+}
+
+@media #{$width-tablet} {
+    .marginPage {
+        min-width: 320px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0 auto;
+    }
+}

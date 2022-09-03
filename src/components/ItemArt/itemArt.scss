@@ -1,0 +1,20 @@
+.itemArt {
+    @include verticalAlignment;
+    max-width: $widthArtwork;
+
+    font-family: $font;
+
+    .itemArt-textContainer {
+        @include horizontalAlignment;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+
+        .textContainer-name {
+            @include fontNameUser;
+        }
+        .textContainer-category {
+            @include fontNameCategory;
+        }
+    }
+}

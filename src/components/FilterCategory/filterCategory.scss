@@ -1,0 +1,21 @@
+.filterCategory {
+    fieldset {
+        border: none;
+        color: $colorDark;
+    }
+}
+
+#demo-multiple-checkbox-label {
+    font-family: $font;
+    @include fontFilter;
+    color: black;
+    
+    &:focus {
+        color: grey;
+    }
+    &::before {
+        color: grey;
+    }
+    
+}
+

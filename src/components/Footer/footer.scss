@@ -1,0 +1,60 @@
+.footer {
+    height: 278px;
+
+    background-color: $colorDark;
+
+    font-family: $font;
+
+    .marginPage {
+        @include horizontalAlignment;
+        height: -webkit-fill-available;
+        justify-content: space-between;
+        padding-top: 50px;
+        padding-bottom: 72px;
+        color: $colorTextWhite;
+    }
+}
+
+.container1 {
+    @include verticalAlignment;
+    justify-content: space-between;
+
+        ul {
+            @include verticalAlignment;
+            gap: $gapItem;
+            li {
+                list-style-type: none;
+                a {
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+        }
+}
+
+.container2 {
+    @include horizontalAlignment;
+
+    .container2-links {
+        @include verticalAlignment;
+        justify-content: space-between;
+        ul {
+            @include verticalAlignment;
+            gap: $gapItem;
+            li {
+                list-style-type: none;
+                a {
+                    text-decoration: none;
+                    cursor: pointer;
+                    color: $colorTextWhite;
+                }
+            }
+        }
+    }
+}
+
+.container2-socialLinks {
+    @include horizontalAlignment;
+    gap: $gapItem;
+    margin-top: 30px;
+}

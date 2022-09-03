@@ -1,0 +1,44 @@
+
+.containerPagination {
+    @include horizontalAlignment;
+    align-items: center;
+    gap: 40px;
+    p {
+        @include fontNumber;
+        color: $colorNumber;
+        width: 100px;
+        text-align: end;
+    }
+}
+
+
+.pagination {
+    .css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+        background-color: $colorDark;
+        color: $colorTextWhite;
+    }
+
+    button{
+        border: 1ps solid $colorDark;
+        border-radius: 0;
+        background-color: $colorTextWhite;
+        color: $colorDark;
+        margin: 0;
+        width: 60px;
+        height: 60px;
+
+        font-family: $font;
+        @include fontNumberPagination;
+
+        &:hover::after {
+            background-color: rgb(56, 56, 56);
+            color: $colorTextWhite;
+        }
+        &:active {
+            background-color: $colorDark;
+            color: $colorTextWhite;
+        }
+    }
+
+    
+}

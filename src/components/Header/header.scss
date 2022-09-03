@@ -1,0 +1,25 @@
+.header {
+    max-width: $widthPage;
+    margin: 0 auto;
+
+    @include horizontalAlignment;
+    justify-content: space-between;
+    align-items: center;
+    height: 112px;
+
+    font-family: $font;
+
+    .nav-list {
+        @include horizontalAlignment;
+        gap: 34px;
+        align-items: center;
+        
+        list-style-type: none;
+        span {
+            position: relative;
+            bottom: 17px;
+            right: 9px;
+        }
+    }
+}   
+

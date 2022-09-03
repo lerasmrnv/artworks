@@ -1,0 +1,70 @@
+$width-tablet: '(max-width: 1440px)';
+$width-desktop: '(min-width: 1441px)';
+
+$font: 'Roboto', sans-serif;
+
+$colorDark: #000000;
+$colorTextWhite: #FFFFFF;
+$colorBackground: #F5F5F5;
+$colorNumber: #959595;
+
+
+$widthPage: 1410px;
+$widthArtwork: 330px; 
+$gapItem: 16px;
+$gapItemArt: 30px;
+
+
+
+@mixin horizontalAlignment {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin verticalAlignment {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin fontTitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 120%;
+
+    letter-spacing: -0.02em;
+}
+
+@mixin fontFilter {
+    font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 150%;
+}
+
+@mixin fontNameUser {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+}
+@mixin fontNameCategory {
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+}
+
+@mixin fontNumberPagination {
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+}
+
+@mixin fontNumber {
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+}

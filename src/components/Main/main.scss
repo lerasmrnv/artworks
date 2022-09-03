@@ -1,0 +1,15 @@
+.main {
+    padding-top: 166px;
+    padding-bottom: 150px;
+    
+    background-color: $colorBackground;
+    font-family: $font;
+    .main-title {
+        @include horizontalAlignment;
+        justify-content: space-between;
+        margin-bottom: 85px;
+        h1, p {
+            @include fontTitle;
+        }
+    }
+}
